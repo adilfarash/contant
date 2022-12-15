@@ -1,0 +1,54 @@
+.screenshot--section {
+  padding-top: 2rem;
+  padding-right: 3.125rem;
+  padding-bottom: 2rem;
+}
+
+.screenshot--heading { 
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.screenshot--text { 
+  margin-top: .625rem;
+  color: var(--color-grey);
+}
+
+.screenshot--form__container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  gap: 16px;
+}
+.screenshot--label {
+  padding: 8px 30px;
+  background-color: var(--color-dark-green);
+  color: var(--color-white);
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: fit-content;
+}
+
+.screenshot--span {
+  margin-left: .625rem;
+  font-size: 1rem;
+}
+.screenshot--submit {
+  border: none;
+  padding: 8px 40px;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: fit-content;
+}
+
+.screenshot--active {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: .5rem;
+}

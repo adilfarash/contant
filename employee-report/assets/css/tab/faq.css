@@ -1,0 +1,26 @@
+.faq--container {
+  background-color: var(--color--faq-body-bg);
+  padding-right: 3.125rem;
+}
+
+.faq--heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.faq--point__container {
+  margin: 1rem 0 0 0;
+  padding: 2rem 0 1rem 1.5rem;
+  background-color: var(--color--faq-bg);
+  background-image: url('../../img/faq.svg');
+  background-position: bottom 10% right 10%;
+  background-size: 350px;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.faq--point__container p {
+  margin-bottom: 1.8rem;
+  font-weight: 600;
+}

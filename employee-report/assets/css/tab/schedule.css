@@ -1,0 +1,68 @@
+.schedule--container {
+  padding-right: 50px;
+  padding-bottom: 2rem;
+}
+.schedule--heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.schedule--text {
+  margin-top: .625rem;
+  margin-bottom: 1.3rem;
+}
+
+.schedule--user__table {
+  width: 100%;
+}
+.schedule--user__table tr {
+  padding: 10px 0;
+  border-radius: 8px;
+}
+
+.schedule--user__table tr:hover {
+  background-color: #e9edef;
+}
+.schedule--user__table td, .schedule--user__table th {
+  text-align: left;
+  padding: 8px;
+}
+
+.table--user__employee {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.table--user__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.table--user__status {
+  border-radius: 20px;
+  font-weight: 700;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.table--user__inactive {
+  background-color: var(--color-light-orange);
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+}
+
+.table--user__active {
+  background-color: var(--color-light-green);
+  color: var(--color-dark-green);
+  border: 1px solid var(--color-dark-green);
+}
+
+.user--edit__icon, .user--dot__icon {
+  background-color: var(--color-light-grey);
+  padding: 8px;
+  color: var(--color-grey);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

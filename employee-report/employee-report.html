@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Portol</title>
+    <!-- *|| Boilerplate CSS Link -->
+    <link rel="stylesheet" href="assets/css/boilerplate.css" />
+    <!-- *|| Sidebar CSS Link -->
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <!-- *|| Working Hours and Date CSS Link -->
+    <link rel="stylesheet" href="assets/css/tab/working-hours.css">
+    <!-- *|| Schedule Management CSS Link -->
+    <link rel="stylesheet" href="assets/css/tab/schedule.css">
+    <!-- *|| Screenshot CSS Link -->
+    <link rel="stylesheet" href="assets/css/tab/screenshot.css">
+    <!-- *|| Team Member CSS Link -->
+    <link rel="stylesheet" href="assets/css/tab/team-member.css">
+    <!-- *|| Project CSS Link -->
+    <link rel="stylesheet" href="assets/css/tab/project.css">
+    <!-- *|| FAQ Content CSS Link -->
+    <link rel="stylesheet" href="assets/css/tab/faq.css">
+    
+
+
+    <!-- *|| Import Font Awsome CSS Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+  </head>
+
+  <body>
+    <main>
+      <section class="sidebar--container">
+      <div class="sidebar--header__logo">
+        <p>Employee Portal</p>
+      </div>
+      <ul class="sidebar--unorderedList">
+
+        <!-- *|| Working Hours and Date Button -->
+        <li>
+          <button class="sidebar--button" onclick= "openTabContent(event, 'working-hours')">
+            <i class='bx bxs-time sidebar--icon'></i>
+            <p>Working Hours & Date</p>
+          </button>
+        </li>
+
+        <!-- *|| Schedule Management Button -->
+        <li>
+          <button class="sidebar--button" onclick="openTabContent(event, 'management')">
+            <i class='bx bxs-notepad sidebar--icon'></i>
+            <p>Schedule Management</p>
+          </button>
+        </li>
+
+        <li>
+          <!-- *|| Screenshot shot of your work Button -->
+          <button class="sidebar--button"  onclick="openTabContent(event, 'screenshot')">
+            <i class='bx bx-screenshot sidebar--icon'></i>
+            <p>Screenshot shot of your work</p>
+        </button>
+        </li>
+
+        <!-- *|| Team Members Work Button -->
+        <li>
+          <button class="sidebar--button" id="defaultOpen" onclick="openTabContent(event, 'team-members')">
+            <i class='bx bxs-group sidebar--icon'></i>
+            <p>Team Members Work</p>
+          </button>
+        </li>
+
+        <!-- *|| Project Button -->
+        <li>
+          <button class="sidebar--button" onclick="openTabContent(event, 'project')">
+            <i class='bx bx-code-alt sidebar--icon'></i>
+          <p>Project</p>
+        </button>
+        </li>
+        
+        <!-- *|| FAQ Button -->
+        <li>
+          <button class="sidebar--button" onclick="openTabContent(event, 'faq')">
+            <i class='bx bx-question-mark sidebar--icon'></i>
+            <p>FAQ</p>
+          </button>
+        </li>
+
+        <!-- *|| Report Button -->
+        <li>
+          <button class="sidebar--button" onclick="openTabContent(event, 'report')">
+            <i class='bx bx-task sidebar--icon'></i>
+            <p>Report</p>
+          </button>
+        </li>
+      </ul>
+    </section>
+
+
+    <!-- *|| Working Hours & Date Content -->
+    <section class="tab--content__container" id="working-hours">
+      <div class="workingHour--container">
+
+        <!-- *|| Working Date and Time Header -->
+        <div>
+          <div class="workingHour--header__container">
+            <div class="workingHour--header__dateTime">
+              <!-- *|| JavaScript Code Implemented -->
+            </div>
+            <div class="workingHour--header__userContainer">
+              <i class='bx bxs-user workingHour--header__userIcon'></i>
+              <p class="workingHour--header__userName">Amelia Addison</p>
+            </div>
+          </div>
+
+          <!-- *|| Working Date and Time Check - in -->
+          <div class="workingHour--checkin__container">
+            <p>Check in</p>
+            <p>Adetive</p>
+          </div>
+
+          <!-- *|| Day total work field -->
+          <div class="workingHour--dayWeek__container">
+            <p class="workingHour--dayTotal__text">Day Total</p>
+            <div class="workingHour--dayTotal__timeContainer">
+              <div class="workingHour--dayTotal__singleTimeContainer">
+                <p>Time 09:00am - 01:00am</p>
+                <p>60</p>
+              </div>
+              <div class="workingHour--dayTotal__singleTimeContainer">
+                <p>Time 01:00pm - 05:00pm</p>
+                <p>120</p>
+              </div>
+              <div class="workingHour--dayTotal__singleTimeContainer">
+                <p>Time 05:00pm - 10:00pm</p>
+                <p>180</p>
+              </div>
+              <div class="workingHour--dayTotal__singleTimeContainer">
+                <p>Total</p>
+                <p>360</p>
+              </div>
+            </div>
+
+            <!-- *|| Week work field -->
+            <p>Week Total</p>
+            <div class="workingHour--weekTotal__timeContainer">
+              <p>Week Total</p>
+              <p>1800</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+    <!-- *|| Schedule Management Content -->
+    <section class="tab--content__container schedule--container" id="management">
+      <h2 class="schedule--heading">Schedule Management</h2>
+      <p class="schedule--text">Manage all your existing schedule or add a new schedule</p>
+      <table class="schedule--user__table">
+        <tr>
+          <th>Employee</th>
+          <th>Period</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+
+        <tr>
+          <td class="table--user__employee">
+            <img class="table--user__image" src="https://randomuser.me/api/portraits/men/11.jpg" alt="user-image">
+            <p>Peter John</p>
+          </td>
+          <td>Dec 6 - Dec 16</td>
+          <td>
+            <p class="table--user__status table--user__inactive">Inactive</p>
+          </td>
+          <td>
+            <i class='bx bxs-edit-alt user--edit__icon'></i>
+            <i class='bx bx-dots-horizontal-rounded user--dot__icon'></i>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table--user__employee">
+            <img class="table--user__image" src="https://randomuser.me/api/portraits/women/11.jpg" alt="user-image">
+            <p>Amelia</p>
+          </td>
+          <td>Dec 6 - Dec 16</td>
+          <td>
+            <p class="table--user__status table--user__active">Active</p>
+          </td>
+          <td>
+            <i class='bx bxs-edit-alt user--edit__icon'></i>
+            <i class='bx bx-dots-horizontal-rounded user--dot__icon'></i>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table--user__employee">
+            <img class="table--user__image" src="https://randomuser.me/api/portraits/women/12.jpg" alt="user-image">
+            <p>Mia</p>
+          </td>
+          <td>Dec 6 - Dec 16</td>
+          <td>
+            <p class="table--user__status table--user__active">Active</p>
+          </td>
+          <td>
+            <i class='bx bxs-edit-alt user--edit__icon'></i>
+            <i class='bx bx-dots-horizontal-rounded user--dot__icon'></i>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table--user__employee">
+            <img class="table--user__image" src="https://randomuser.me/api/portraits/men/12.jpg" alt="user-image">
+            <p>Oliver</p>
+          </td>
+          <td>Dec 6 - Dec 16</td>
+          <td>
+            <p class="table--user__status table--user__active">Active</p>
+          </td>
+          <td>
+            <i class='bx bxs-edit-alt user--edit__icon'></i>
+            <i class='bx bx-dots-horizontal-rounded user--dot__icon'></i>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table--user__employee">
+            <img class="table--user__image" src="https://randomuser.me/api/portraits/men/13.jpg" alt="user-image">
+            <p>Josh</p>
+          </td>
+          <td>Dec 6 - Dec 16</td>
+          <td>
+            <p class="table--user__status table--user__active">Active</p>
+          </td>
+          <td>
+            <i class='bx bxs-edit-alt user--edit__icon'></i>
+            <i class='bx bx-dots-horizontal-rounded user--dot__icon'></i>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table--user__employee">
+            <img class="table--user__image" src="https://randomuser.me/api/portraits/men/12.jpg" alt="user-image">
+            <p>Mohammed</p>
+          </td>
+          <td>Dec 6 - Dec 16</td>
+          <td>
+            <p class="table--user__status table--user__active">Active</p>
+          </td>
+          <td>
+            <i class='bx bxs-edit-alt user--edit__icon'></i>
+            <i class='bx bx-dots-horizontal-rounded user--dot__icon'></i>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table--user__employee">
+            <img class="table--user__image" src="https://randomuser.me/api/portraits/women/13.jpg" alt="user-image">
+            <p>Ava</p>
+          </td>
+          <td>Dec 6 - Dec 16</td>
+          <td>
+            <p class="table--user__status table--user__active">Active</p>
+          </td>
+          <td>
+            <i class='bx bxs-edit-alt user--edit__icon'></i>
+            <i class='bx bx-dots-horizontal-rounded user--dot__icon'></i>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="table--user__employee">
+            <img class="table--user__image" src="https://randomuser.me/api/portraits/women/14.jpg" alt="user-image">
+            <p>Nosh</p>
+          </td>
+          <td>Dec 6 - Dec 16</td>
+          <td>
+            <p class="table--user__status table--user__active">Active</p>
+          </td>
+          <td>
+            <i class='bx bxs-edit-alt user--edit__icon'></i>
+            <i class='bx bx-dots-horizontal-rounded user--dot__icon'></i>
+          </td>
+        </tr>
+
+      </table>
+    </section>
+
+    <!-- *|| Screenshot shot of your work Content -->
+    <section class="tab--content__container screenshot--section" id="screenshot">
+      <h2 class="screenshot--heading">Screenshot of your work</h2>
+      <p class="screenshot--text">Please upload the screenshot of your Work. It helps us to keep track of your work.</p>
+
+      <form action="/backend-link" class="screenshot--form__container">
+        <img src="./assets/img/screenshot_icon.svg" alt="Screenshot" class="screenshot--image">
+        <div>
+          <label for="screenshot-upload" class="screenshot--label">Upload</label>
+          <input type="file" accept="image/*" id="screenshot-upload" hidden>
+          <span class="screenshot--span">No file chosen</span>
+        </div>
+        <input type="submit" value="Done" class="screenshot--submit">
+      </form>
+    </section>
+
+    <!-- *|| Team Members Content -->
+    <section class="tab--content__container teamMembers--container" id="team-members">
+      <div style="position:relative; display: flex;">
+        <input type="text" placeholder="Search Member" class="teamMember--searchInput" id="teamMember-input"/>
+        <i class='bx bx-x teamMember--cancel__icon' onclick="clearInput()"></i>
+      </div>
+
+      <div class="team--profile__container">
+
+        <div class="teamMember--user__container">
+          <div class="user--info__container">
+            <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="user" />
+            <div class="user--nameLocation__container">
+              <p class="teamMember--user__name">Alexa Jagg</p>
+              <p class="teamMember--user__location"><i class='bx bxs-map' ></i> Bangalore, India</p>
+            </div>
+          </div>
+          
+          <p class="teamMember--user__grey teamMember--expirence">Product Designer with 5 years expirence in UI/UX field.</p>
+
+          <div class="teamMember--progress__container">
+            <div class="teamMember--progress">
+              <p class="teamMember--progress__number">274</p>
+              <p class="teamMember--progress__word teamMember--user__grey">Hours</p>
+            </div>
+            <hr />
+            <div>
+              <p class="teamMember--progress__number">24</p>
+              <p class="teamMember--progress__word teamMember--user__grey">Projects</p>
+            </div>
+            <hr />
+            <div>
+              <p class="teamMember--progress__number">4.5</p>
+              <p class="teamMember--progress__word teamMember--user__grey">Ratings</p>
+            </div>
+          </div> 
+          <p class="teamMember--reference">References</p>
+          <div>
+            <img class="teamMember-reference__image" src="https://randomuser.me/api/portraits/men/11.jpg" alt="Employee">
+            <img class="teamMember-reference__image" src="https://randomuser.me/api/portraits/men/4.jpg" alt="Employee">
+            <img class="teamMember-reference__image" src="https://randomuser.me/api/portraits/men/13.jpg" alt="Employee">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- *|| Project Content -->
+    <section class="tab--content__container project--section" id="project">
+
+      <div class="project--header__container">
+        <div class="project--header__textContainer">
+          <h2>Hello, Amelia!</h2>
+          <p>Have a nice day!</p>
+        </div>
+        <img class="project--header__image" src="https://randomuser.me/api/portraits/women/11.jpg" alt="ameila picture">
+      </div>
+
+      <div class="searchFilter--container">
+        <div class="search--container">
+          <input type="text" placeholder="Search" class="search--input">
+          <i class='bx bx-search-alt-2 search--icon'></i>
+        </div>
+        <i class='bx bxs-filter-alt filter--icon'></i>
+      </div>
+
+      <div class="project--button__container">
+        <button class="project--button">
+          <span></span> 
+          <p>My Task</p></button>
+        <button class="project--button">
+          <span></span>
+          <p>Project</p>
+        </button>
+        <button class="project--button">
+          <span></span>
+          <p>Notes</p>
+        </button>
+      </div>
+      <div class="project--list__container">
+        <div class="singleProject--container">
+          <div class="singleProject--user__projectName">
+            <i class='bx bxs-user'></i>
+            <p>Project B</p>
+          </div>
+          <p class="singleProject--stack">Front End Development</p>
+          <p>September 2021</p>
+        </div>
+
+        <div class="singleProject--container">
+          <div class="singleProject--user__projectName">
+            <i class='bx bxs-user'></i>
+            <p>Project A</p>
+          </div>
+          <p class="singleProject--stack">Graphics Design</p>
+          <p>October 2020</p>
+        </div>
+      </div>
+      <p>Process</p>
+      <div class="project--process__container">
+        <i class='bx bx-file project--sheet__icon'></i>
+        <div class="project--process__name">
+          <p class="project--name">Project Name</p>
+          <p class="project--started__date">2 days ago</p>
+        </div>
+        <i class='bx bx-dots-vertical-rounded'></i>
+      </div>
+    </section>
+
+    <!-- *|| FAQ Content -->
+    <section class="faq--container tab--content__container" id="faq">
+      <h1 class="faq--heading">FAQ</h1>
+      <div class="faq--point__container">
+        <p>Everyone must fill the given work by your certain daily</p>
+        <p>Everyone fill the daily timing in minutes. To self analyse your work</p>
+        <p>Everyone Upload Screenshot of your given work</p>
+        <p>If your work is done. Tick the status box</p>
+        <p>If not leave it free</p>
+        <p>If Work is incomplete,</p>
+        <p>Meeting will be conduct.</p>
+        <p>Don't try to cheat. We know very well</p>
+      </div>
+    </section>
+
+    <!-- *|| Report Content -->
+    <section class="tab--content__container" id="report">
+      <p>Report</p>
+    </section>
+
+    
+    </main>
+    <script src="./assets/js/tab.js"></script>
+    <script src="./assets/js/workingHours.js"></script>
+    <script src="./assets/js/screenshot.js"></script>
+    <script src="./assets/js/team-member.js"></script>
+  </body>
+</html>

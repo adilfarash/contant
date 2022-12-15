@@ -1,0 +1,87 @@
+.workingHour--container {
+  margin-top: 1.6rem;
+  margin-right: 3.125rem;
+  margin-bottom: 3rem;
+  border-radius: .5rem;
+  padding: 2rem;
+  background:linear-gradient(180deg, var(--color-skyblue) 0%, var(--color-skyblue) 50%, var(--color-white) 50%, var(--color-white) 100%);
+}
+
+/* *|| Working Hour Header */
+.workingHour--header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.workingHour--header__dateTime {
+  padding-top: 1rem;
+}
+.workingHour--header__date {
+  font-size: .875rem;
+  font-weight: 600;
+}
+
+.workingHour--header__time {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.workingHour--header__userContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.workingHour--header__userIcon {
+  font-size: 3rem;
+  color: var(--color-white);
+}
+
+.workingHour--header__userName {
+  font-weight: 600;
+}
+
+/* *|| Working Hour Checkin */
+.workingHour--checkin__container {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.workingHour--checkin__container p:nth-child(1) {
+  font-size: 2rem;
+}
+
+/* *|| Working Hour Day Total Text */
+.workingHour--dayWeek__container {
+  font-weight: 600;
+  margin: 0 2rem;
+
+}
+.workingHour--dayTotal__text {
+  margin-bottom: .75rem;
+}
+.workingHour--dayTotal__timeContainer {
+  background-color: var(--color-green);
+  padding: 1rem 0;
+  color: var(--color-white);
+  border-radius: 8px;
+  margin-bottom: .75rem;
+}
+.workingHour--dayTotal__singleTimeContainer {
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 5rem;
+}
+
+.workingHour--weekTotal__timeContainer {
+  display: flex;  
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: .75rem;
+  color: var(--color-white);
+  padding: 2rem 5rem;
+  border-radius: 8px;
+  background-color: var(--color-light-green);
+}

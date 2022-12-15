@@ -1,0 +1,98 @@
+.teamMembers--container {
+    background-color: var(--color-green);
+      padding-right: 50px;
+      height: 100vh;
+  }
+  
+  .teamMember--searchInput {
+      width: 100%;
+      border: none;
+      border-radius: 20px;
+      padding: 1rem;
+      font-size: 1rem;
+  }
+  
+  .teamMember--searchInput:focus {
+      border: none;
+      outline: none;
+  }
+  
+  .teamMember--cancel__icon {
+      position: absolute;
+      font-size: 1.5rem;
+      color: red;
+      align-self: center;
+      cursor: pointer;
+      right: 15px;
+  }
+  .team--profile__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .teamMember--user__container {
+      background-color: var(--color-white);
+      margin-top: 7rem;
+      padding: 2rem 5rem;
+      margin-left: 0.5rem;
+      border-radius: 20px;
+      width: fit-content;
+  }
+  
+  .user--info__container {
+      display: flex;
+      gap: 1rem;
+      transform: translate(0, -60%);
+  }
+  
+  .user--info__container img {
+      border-radius: 10px;
+  }
+  
+  .user--nameLocation__container {
+      align-self: flex-end;
+  }
+  
+  .teamMember--user__name {
+      font-weight: 600;
+      font-size: 1.5rem;
+  }
+  
+  .teamMember--user__location {
+      color: var(--color-grey);
+  }
+  
+  .teamMember--expirence {
+      margin-top: -3rem;
+      transform: translate(0, -60%);
+      color: var(--color-grey);
+  
+  }
+  /* *|| Team Members Progress */
+  .teamMember--progress__container {
+      display: flex;
+      gap: 1.3rem;
+      margin-top: 1rem;
+  }
+  
+  .teamMember--progress__number {
+      font-weight: 600;
+      font-size: 2rem;
+  }
+  
+  .teamMember--progress__word {
+      color: var(--color-grey);
+  }
+  
+  /* *|| Reference Part */
+  .teamMember--reference {
+      margin: 1.5rem 0 1rem 0;
+      color: var(--color-grey);
+  }
+  .teamMember-reference__image {
+      width: 60px;
+      border-radius: 10px;
+      margin-right: 1rem;
+      height: 60px;
+  }

@@ -1,0 +1,148 @@
+.project--section {
+  background-color: var(--color-light-aliceblue);
+  padding-right: 92px;
+  padding-left: 360px;
+}
+
+.project--header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project--header__textContainer h2 {
+  font-size: 2rem;
+}
+.project--header__image {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.searchFilter--container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.search--container {
+  width: 90%;
+  position: relative;
+  display: flex;
+}
+
+.search--input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.2rem;
+  background-color: var(--color-light-blue);
+}
+
+.search--icon {
+  position: absolute;
+  right: 10px;
+  align-self: center;
+  font-size: 1.5rem;
+  color: var(--color-grey);
+}
+
+.filter--icon {
+  font-size: 1.5rem;
+  color: var(--color-blue);
+  background-color: var(--color-light-blue);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.project--button__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.project--button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-light-blue);
+  border: none;
+  font-size: 1.2rem;
+  padding: 10px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.project--button:focus {
+  background-color: var(--color-white);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.project--list__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.singleProject--container {
+  border-radius: 8px;
+  padding: 2rem 3rem;
+  background-color: var(--color-light-blue);
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.singleProject--user__projectName {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.singleProject--user__projectName i {
+  background-color: var(--color-blue);
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 8px;
+  color: var(--color-white);
+}
+
+.singleProject--stack {
+  font-weight: 600;
+}
+
+.project--process__container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  background-color: var(--color-light-blue);
+  padding: 1rem 2rem;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+.project--sheet__icon {
+  background-color: var(--color-white);
+  padding: 10px;
+  color: var(--color-blue);
+  font-size: 2rem;
+  border-radius: 8px;
+}
+
+.project--name {
+  font-weight: 600;
+}
+
+.project--started__date {
+  color: var(--color-grey);
+  font-size: .75rem;
+}
+
+.bx-dots-vertical-rounded {
+  cursor: pointer;
+}
